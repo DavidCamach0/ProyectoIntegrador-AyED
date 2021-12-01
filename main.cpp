@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <conio.h>
+
 
 int MenuGeneral()
 {
@@ -23,6 +25,7 @@ int MenuRecepcion()
 
     int opc = 0;
 
+    printf("\n===============================");
     printf("\n     MODULO RECEPCION");
     printf("\n===============================");
 
@@ -44,8 +47,9 @@ int MenuAdministracion()
 {
      int opc = 0;
 
-    printf("\n     MODULO ADMINISTRACION");
-    printf("\n===============================");
+    printf("\n==================================");
+    printf("\n      MODULO ADMINISTRACION");
+    printf("\n==================================");
 
     printf("\n\n1.- Registrar Profesional");
     printf("\n2.- Registrar Usuario Recepcionista");
@@ -65,7 +69,8 @@ int MenuEspacios()
 {
     int opc = 0;
 
-    printf("\n     MODULO ESPACIOS");
+    printf("\n===============================");
+    printf("\n      MODULO ESPACIOS");
     printf("\n===============================");
 
     printf("\n\n1.- Iniciar Sesion");
@@ -94,34 +99,163 @@ main()
        {
            case 1:
                 {
+                    system("cls");
+                    opcion = MenuEspacios();
+                    system("cls");
+
+                        switch(opcion)
+                        {
+                            case 1:
+                            {
+
+                                break;
+                            }
+
+                            case 2:
+                            {
+
+                                break;
+                            }
+
+                            case 3:
+                            {
+
+                                break;
+                            }
+
+                            case 0:
+                            {
+
+                                break;
+                            }
+
+                            default:
+                            {
+
+                                break;
+                            }
 
 
-                     break;
+                        }
+
+                    break;
                 }
             case 2:
                 {
+                     system("cls");
+                    opcion = MenuRecepcion();
+                    system("cls");
+
+                        switch(opcion)
+                        {
+                            case 1:
+                            {
+
+                                break;
+                            }
+
+                            case 2:
+                            {
+
+                                break;
+                            }
+
+                            case 3:
+                            {
+
+                                break;
+                            }
+
+                            case 4:
+                            {
+
+                                break;
+                            }
+
+                            case 0:
+                            {
+
+                                break;
+                            }
+
+                            default:
+                            {
+
+                                break;
+                            }
 
 
-                     break;
+                        }
+
+                    break;
                 }
             case 3:
                 {
+                     system("cls");
+                    opcion = MenuAdministracion();
+                    system("cls");
+
+                        switch(opcion)
+                        {
+                            case 1:
+                            {
+
+                                break;
+                            }
+
+                            case 2:
+                            {
+
+                                break;
+                            }
+
+                            case 3:
+                            {
+
+                                break;
+                            }
+
+                            case 4:
+                            {
+
+                                break;
+                            }
+
+                            case 0:
+                            {
+
+                                break;
+                            }
+
+                            default:
+                            {
+
+                                break;
+                            }
 
 
-                     break;
+                        }
+
+
+                    break;
                 }
-            case 4:
+            case 0:
                 {
 
-
-                     break;
+                    printf("\n=======================================");
+                    printf("\nCerrando Programa...\n");
+                    printf("\n=======================================\n\n");
+                    system("pause");
+                    
+                    break;
                 }
             default :
                 {
                     printf("\n=======================================");
-                    printf("\nEsa Opcion no se encuentra en el Menu.\n\n");
-                    printf("\n=======================================");
+                    printf("\nEsa Opcion no se encuentra en el Menu.\n");
+                    printf("\n=======================================\n\n");
                     system("pause");
+
                     break;
                 }
 

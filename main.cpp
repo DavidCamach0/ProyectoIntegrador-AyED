@@ -84,6 +84,51 @@ int MenuEspacios()
     return opc;
 }
 
+
+struct Fecha
+{
+    int dia;
+    int mes;
+    int anio;
+};
+
+
+struct Usuario
+{
+    char usuario[10];
+    char contraseña[10];
+    char apeNom[60];
+};
+
+struct Profesional
+{
+    char apeNom[60];
+    int idProfesional;
+    int dniProfesional;
+    char telefono[25];
+};
+
+
+struct Cliente
+{
+    char apeNom[60];
+    char domicilio[60]
+    int dniCliente;
+    char localidad[60];
+    Fecha fechaDeNacimiento;
+    float peso;
+    char telefono[25];
+};
+
+struct Turnos
+{
+    int idProfesional;
+    Fecha fechaDeTurno;
+    int dniCliente;
+    char detalleDeAtencion[380];
+};
+
+
 main()
 {
     int opcion = 0;
@@ -142,7 +187,7 @@ main()
                 }
             case 2:
                 {
-                     system("cls");
+                    system("cls");
                     opcion = MenuRecepcion();
                     system("cls");
 
@@ -263,6 +308,4 @@ main()
 
     } while (opcion != 0);
     
-
-
 }
